@@ -357,8 +357,7 @@ img{
     }
 
     .features__grid-item,
-    .features__grid-column-right,
-    .features__grid-item{
+    .features__grid-column-right .features__grid-item{
         text-align: center;
         flex-direction: column-reverse;
         max-width: 400px;
