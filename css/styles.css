@@ -232,46 +232,6 @@ img{
     margin-bottom: 1.5rem;
 }
 
-@media(max-width: 992px){
-    .hero{
-        padding: 10rem;
-        text-align: center;
-    }
-
-    .hero__container{
-        flex-direction: column;
-    }
-
-    .hero__title{
-        font-size: 2.3rem;
-    }
-
-    .hero__buttons{
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .hero__button{
-        width: 100%;
-    }
-
-    .hero__image img{
-        max-width: 350px;
-    }
-
-    .testimonials__container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .testimonials__card{
-        padding: 0 1.5rem;
-    }
-
-    .testimonials__card:nth-child(3){
-        display: none;
-    }
-}
-
 /* Features */
 
 .features{
@@ -333,6 +293,84 @@ img{
 .features__grid-column-right .features__grid-item{
     flex-direction: row-reverse;
     text-align: left;
+}
+
+@media(max-width: 992px){
+
+    /* Hero */
+
+    .hero{
+        padding: 10rem;
+        text-align: center;
+    }
+
+    .hero__container{
+        flex-direction: column;
+    }
+
+    .hero__title{
+        font-size: 2.3rem;
+    }
+
+    .hero__buttons{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero__button{
+        width: 100%;
+    }
+
+    .hero__image img{
+        max-width: 350px;
+    }
+
+    /* Testimonials */
+
+    .testimonials__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials__card{
+        padding: 0 1.5rem;
+    }
+
+    .testimonials__card:nth-child(3){
+        display: none;
+    }
+
+    /* Features */
+
+    .features__grid{
+        grid-template-columns: 1fr;
+    }
+
+    .features__grid-column-left,
+    .features__grid-column-right{
+        order: 2;
+        margin-bottom: 2rem;
+    }
+
+    .features__grid-column-center{
+        order: 1;
+        margin-bottom: 3rem;
+    }
+
+    .features__grid-item,
+    .features__grid-column-right,
+    .features__grid-item{
+        text-align: center;
+        flex-direction: column-reverse;
+        max-width: 400px;
+    }
+
+    .features__grid-item-icon{
+        margin: 0 auto;
+    }
+
+    .features__grid-column-center img{
+        max-width: 300px;
+    }
 }
 
 @media(max-width: 768px){
